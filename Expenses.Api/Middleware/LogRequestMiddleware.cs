@@ -14,9 +14,11 @@ public class LogRequestMiddleware(
 
         var correlationId = correlationContext.CorrelationContext.CorrelationId;
 
+        var sanitizedMethod = context.Request.Method.Replace(Environment.NewLine, "").Replace("\n", "").Replace("\r", "");
+
         logger.LogInformation(
             "Scheme: {scheme}, Host: {host}, Path: {path}, Method: {method}, url: {url}, correlationId: {correlationId}",
-            context.Request.Scheme, context.Request.Host, context.Request.Path, context.Request.Method, url,
+            context.Request.Scheme, context.Request.Host, context.Request.Path, sanitizedMethod, url,
             correlationId);
 
         await next(context);
