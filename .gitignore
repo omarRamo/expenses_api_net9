@@ -1,0 +1,85 @@
+﻿# .NET Core
+## Ignore build output directories
+bin/
+obj/
+
+# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer
+*.psmdcp
+
+# Windows Installer files
+*.log
+
+# Windows Installer logs
+*_i.c
+
+# Windows Installer files
+*.pdb
+*.exe
+*.dll
+
+# .NET Core / ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+
+# Windows Installer
+*.obj
+*.bak
+*.lib
+*.exp
+*.tlog
+
+# Windows Installer files
+App_Data/
+
+# NPM packages
+node_modules/
+
+# JetBrains Rider
+.idea/
+
+# Tye
+.tye/
+
+# ASP.NET Core
+wwwroot/
+
+# Temporary ASP.NET files
+Temporary ASP.NET Files/
+
+# Azure Functions
+.local/
+
+# Rider for .NET Core projects
+.idea/
+
+# User-specific files for Visual Studio
+.vs2017/
+.vs2019/
+.vs2015/
+
+# User-specific files for Visual Studio for Mac
+.vscode/
+
+# Windows Installer files
+*.user
+
+# Windows Installer files
+*.suo
+
+# Windows Installer files
+*.userosscache
+*.suo
+
+# User-specific files for Rider
+.idea/
